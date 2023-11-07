@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 
 # Instale as dependências do Node.js (se necessário)
 # Os módulos gRPC, rdkafka e o driver PostgreSQL
- #RUN npm install grpc rdkafka-node pg
+# RUN npm install grpc rdkafka-node pg
 
 # Copie seu código Node.js e outros arquivos necessários
 COPY . /app
