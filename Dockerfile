@@ -6,7 +6,8 @@ RUN apt-get update && apt-get install -y \
     libz-dev \
     libssl-dev \
     libpq-dev \
-    librdkafka-dev
+    librdkafka-dev \
+    postgresql-client
 
 # Instale as dependências do Node.js (se necessário)
 # Os módulos gRPC, rdkafka e o driver PostgreSQL

@@ -1,6 +1,7 @@
-DROP SCHEMA public cascade;
+DROP SCHEMA IF EXISTS public cascade;
+CREATE SCHEMA public;
 
-CREATE TABLE pix_keys (
+CREATE TABLE public.pix_keys (
     id UUID PRIMARY KEY,
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
@@ -9,7 +10,7 @@ CREATE TABLE pix_keys (
     account_id UUID NOT NULL
 );
 
-CREATE TABLE banks (
+CREATE TABLE public.banks (
     id SERIAL PRIMARY KEY,
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
@@ -17,7 +18,7 @@ CREATE TABLE banks (
     name VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE accounts (
+CREATE TABLE public.accounts (
     id UUID PRIMARY KEY,
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
